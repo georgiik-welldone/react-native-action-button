@@ -71,7 +71,7 @@ export default class ActionButtonItem extends Component {
               marginHorizontal: 8,
               marginBottom: this.props.verticalOrientation === 'up' ? 12 : 0,
               marginTop: this.props.verticalOrientation === 'down' ? 12 : 0,
-              opacity: this.props.disabled ? 0.5 : 1
+              opacity: this.props.disabled ? 0.2 : 1
             }]}
           >
             {this.props.children}
