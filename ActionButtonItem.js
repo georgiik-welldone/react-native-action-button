@@ -60,7 +60,7 @@ export default class ActionButtonItem extends Component {
         <TouchableOpacity
           style={{ flex:1 }}
           activeOpacity={this.props.activeOpacity || 0.85}
-          onPress={this.props.onPress}
+          onPress={this.props.disabled ? () => {} : this.props.onPress}
         >
           <View
             style={[styles.actionButton, !this.props.hideShadow && styles.shadow, this.props.style, {
@@ -71,6 +71,7 @@ export default class ActionButtonItem extends Component {
               marginHorizontal: 8,
               marginBottom: this.props.verticalOrientation === 'up' ? 12 : 0,
               marginTop: this.props.verticalOrientation === 'down' ? 12 : 0,
+              opacity: this.props.disabled ? 0.5 : 1
             }]}
           >
             {this.props.children}

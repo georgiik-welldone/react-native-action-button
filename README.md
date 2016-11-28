@@ -119,3 +119,4 @@ Take a look at [this gist](https://gist.github.com/mmazzarolo/cfd467436f9d110e94
 | textContainerStyle  | style   | null                | use this to set the textstyle of the button's item text container
 | textStyle     | style         | null                | use this to set the textstyle of the button's item text
 | spaceBetween  | number        | 15                  | use this to set the space between the Button and the text container
+| disabled      | boolean       | false               | disable action button
